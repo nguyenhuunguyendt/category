@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
 async function connect() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/f8_education_dev', {
+        await mongoose.connect('mongodb://localhost:27017/shopping', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
-        console.log('success')
+        console.log('connect Db success !')
     } catch (error) {
-        console.log('fail')
+        console.log('connect Db fail')
     }
 }
 
